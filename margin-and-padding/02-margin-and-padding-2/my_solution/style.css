@@ -1,0 +1,56 @@
+body {
+  background: #eee;
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  padding: 8px; /* padding adds to contents margin */
+}
+
+.title,
+.button-container {
+  /* this is explicitly needed, otherwise the top margin will contain 8px 
+  and add to the card padding. Perhaps because it is an h1 header? */
+  margin: 0px;
+  padding: 8px;
+}
+
+.title {
+  background: #e3f4ff;
+  font-size: 16px;
+}
+
+.content {
+  background: #e3f4ff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.button-container {
+  background: #e3f4ff;
+  text-align: center;
+}
+
+button {
+  display: block;
+  background: white;
+  border: 1px solid #eee;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* nasty trick to center the button on its line */
+  margin-left: auto;
+  margin-right: auto;
+}
